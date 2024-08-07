@@ -327,7 +327,7 @@ function HomeTab() {
 
   // Função para calcular o preço do suco conforme o nível da bateria
   const calculatePrice = (basePrice) => {
-    return basePrice + ((100 - 50) * 0.10);
+    return basePrice + ((100 - batteryLevel) * 0.10);
   };
 
   const juices = [
